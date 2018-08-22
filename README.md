@@ -31,31 +31,30 @@ You are now the proud owner of a GitHub account! The next step is to add your na
 - Press your profile icon and click 'Your profile' from the dropdown:
 ![](images/readme/add_name_1.png)
 
-- On your profile page, click 'Edit profile':
+- On your profile page, click 'Edit profile':  
 ![](images/readme/add_name_2.png)
 
-- Add your name, first and last:
+- Add your name, first and last:  
 ![](images/readme/add_name_3.png)
 
 - Press 'Update profile' to save your changes.
 
-**Once you are done creating your account, email your name and GitHub username to a STAT190 TA so we can create your assignment repository!**
+**Once you are done creating your account, email your name and GitHub username to a STAT 190 TA so we can create your assignment repository!**
 
 ## How to submit assignments
 
 ### For first-time submissions
 - Check your email inbox for a repository invite
-    - If you can't find an invite, navigate to github.com/thedatamine/FIRSTNAME-LASTNAME
+    - If you can't find an invite, navigate to https://github.com/thedatamine/FIRSTNAME-LASTNAME
 - Accept the invite
 - Continue to the [next step](#for-returning-customers)
 
 ### For returning customers
-- Log in to your GitHub account
-- Click on the repository named after you under the 'Repositories' section:
+- Go to https://github.com/thedatamine
+- Click on the repository named after you (ex. Peggy-Sue):
 ![](images/readme/submit_1.png)
 - You should now be on your assignment repository page:
 ![](images/readme/submit_2.png)
-
 - Click on the button labeled 'Upload files':
 ![](images/readme/upload_button.png)
 
