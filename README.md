@@ -55,7 +55,7 @@ You are now the proud owner of a GitHub account! The next step is to add your na
 ![](images/readme/submit_1.png)
 - You should now be on your assignment repository page:
 ![](images/readme/submit_2.png)
-- Click on the button labeled 'Upload files':
+- Click on the button labeled 'Upload files':  
 ![](images/readme/upload_button.png)
 
 - Drag and drop any project folders you wish to submit for grading
