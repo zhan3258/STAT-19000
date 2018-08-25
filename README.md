@@ -76,6 +76,7 @@ For assignments where work is done in the command line, follow this general proc
 
         # 3
         cat file.csv | sort | tail -n4
+        ---
         joe     47
         amy     52
         carl    77
