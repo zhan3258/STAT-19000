@@ -127,11 +127,11 @@ All grades will be posted on [Blackboard](https://mycourses.purdue.edu/).
 |                      | Monday        | Tuesday      | Wednesday     | Thursday      |
 |----------------------|---------------|--------------|---------------|---------------|
 | Dr. Ward             |               |              | 7:00-8:00 AM  |               |
-| Elizabeth Bell       |               | 3:00-4:00 PM |               | 3:00-4:00 PM  |
+| Elizabeth Bell (UTA) |               | 3:00-4:00 PM |               | 3:00-4:00 PM  |
 | Luke Francisco (UTA) | 1:30-3:30 PM  |              |               |               |
 | Tyler Netherly (UTA) |               | 5:00-7:00 PM |               |               |
-| Tim Park (UTA)       | 5:00-6:00 PM  | 4:00-5:00 PM |               |               |
-| Sehwan Kim (GTA)     | 9:45-10:45 AM |              | 9:45-10:45 AM |               |
-| Yuki Ohnishi (GTA)   |               | 2:00-3:00 PM |               | 2:00-3:00 PM  |
-| Juan Shu (GTA)       |               |              |               | 8:30-10:30 AM |
-| Yumin Zhang (GTA)    |               |              | 3:00-5:00 PM  |               |
+| Tim Park       (UTA) | 5:00-6:00 PM  | 4:00-5:00 PM |               |               |
+| Sehwan Kim     (GTA) | 9:45-10:45 AM |              | 9:45-10:45 AM |               |
+| Yuki Ohnishi   (GTA) |               | 2:00-3:00 PM |               | 2:00-3:00 PM  |
+| Juan Shu       (GTA) |               |              |               | 8:30-10:30 AM |
+| Yumin Zhang    (GTA) |               |              | 3:00-5:00 PM  |               |
