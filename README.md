@@ -1,17 +1,19 @@
 # STAT 19000
 The official STAT 19000 GitHub repository
 
+- Class website: http://www.stat.purdue.edu/datamine/19000
+- Class time: Thursdays at 5:00 -- 5:50 PM @ Hillenbrand dining court atrium
 
 ## Table of Contents
 
 - [Create a GitHub account](#create-a-github-account)
-- [Homework submission guidelines](#homework-submission-guidelines)
+- [Homework guidelines](#homework-guidelines)
 - [How to submit assignments](#how-to-submit-assignments)
-- [View your grades](#view-your-grades)
+- [Grading guidelines](#grading-guidelines)
 - [Office hours](#office-hours)
 
 ## Create a GitHub Account
-> If you already have a GitHub account, do not worry about making a new one-- just skip this step!
+If you already have a GitHub account, do not worry about making a new one-- just skip this part!
 
 - Go to github.com
 - Fill in the sign-up form on the main page and press 'Sign up for GitHub'
@@ -42,55 +44,34 @@ You are now the proud owner of a GitHub account! The next step is to add your na
 **Once you are done creating your account, email your name and GitHub username to a STAT 190 TA so we can create your assignment repository!**
 
 
-## Homework submission guidelines
+## Homework guidelines
 
+We **insist** that everyone document sources of help during the projects. It is **not** OK to copy-and-paste code from classmates or from the web. If a classmate or a website is helpful to you, that is OK as long as you document the source of help, and as long as you still create your own solution and make your own individual comments about the code. It is OK to help each other, but comprehending the material in this class fully is critical.
 
-For assignments where work is done in the command line, follow this general procedure:
+For projects 1 and 2, the assignments will submitted as text documents (.txt) (Do NOT submit a Microsoft Word file.) Text documents can be created on the Scholar cluster by using one of several text editors. The easiest of these to use is gedit, but nano, emacs, and vi (my favorite) are also options. To open gedit, either find it in the Applications menu or simply type gedit in the terminal.
+A sample of how we want the homework to be formatted in the document is shown below.
+```
+2a.  Use the ls command to learn which of the resulting .csv files is biggest in
+	terms of bytes.  How many bytes does this largest file have?
 
-1. Create a folder called ```project_##```. The ```##``` will be replaced by two-digit number for whichever project you are currently working on. For example, ```project_01``` will contain all files related to project 1.
+	# lists the contents of the working directory including file size, file permissions, etc
+	ls -l
+	702878193
 
-2. Create a text file called ```solutions.txt```, and write all your solutions in it
-    - Format your solution file to look like this:
-        ```
-        # 1a
-        # <optional short explanation>
-        <code>
-        ---
-        <output>
+	The largest file was 2007.csv with 702878193 bytes.
 
+	2b.  Use the wc command to learn which of the resulting .csv files has the most lines.  How many lines does this largest file have?
 
-        # 1b
-        # get ages, and print the top 5 highest values
-        cat file.csv | cut -d, -f10 | sort | head -n5
-        ---
-        33
-        34
-        52
-        55
-        92
+	# counts number of lines in all .csv files
+	wc -1 *.csv | sort -n
+	7453216 2007.csv
 
+	The most lines are in 2007.csv with 7453216 lines.
+```
 
-        # 2
-        cat file.csv | egrep -i '[a-z]' > file.txt
+Please copy the question exactly from the problem set, and add **solutions with comments** (explain what the code is doing in the comments). Paste the output of the command into the document below the solution (if more than 10 lines, please just give me either the first or last 10 lines to make the solutions more readable). Write a short sentence explaining the output in the context of the problem.
 
-
-        # 3
-        cat file.csv | sort | tail -n4
-        ---
-        joe     47
-        amy     52
-        carl    77
-        james   81
-        ```
-    You won't be penalized for small mistakes in your formatting, but please do your best to adhere to this format! It makes the TAs' lives easier.
-
-    - For problems that produce very long answers, limit your output to *at most* 10 lines
-        - The ```head``` command is your friend
-    - Clearly number and separate individual problems
-
-    > Feel free to add comments to your code to add clarity, especially if you create files. Help your graders understand your solutions!
-
-3. Place ```solutions.txt``` and any other relevant files you may have created into ```project_01```
+> The projects later in the semester (after the first few weeks) will be written in RMarkdown. A similar format will be expected on those as well. We will send out an email after the class goes over RMarkdown with a sample of what a project in RMarkdown should look like. 
 
 Continue to the [next section](#how-to-submit-assignments) to learn how to submit your work for grading
 
@@ -111,27 +92,17 @@ Continue to the [next section](#how-to-submit-assignments) to learn how to submi
 - Click on the button labeled 'Upload files':  
 ![](images/readme/upload_button.png)
 
-- Drag and drop your project folder
+- Drag and drop your project file
 - Press 'Commit changes' to submit your work
 
 If all went well, you should now see your submitted work in your assignment repository!
 
-## View your grades
-All grades will be posted on [Blackboard](https://mycourses.purdue.edu/).
+## Grading guidelines
+
+- Each project will be out of 10 points
+- All grades will be posted on [Blackboard](https://mycourses.purdue.edu/)
+
+Project deadlines are subject to change if the majority of individuals have not finished the project. Once a project deadline has passed however, we will reduce by 10 percent per day from the individuals who have not submitted their project solutions. 
 
 ## Office hours
-
-- All office hours will be temporarily held in Dr. Ward's office
-- Office hours may change during the first couple of weeks of this course
-
-|                      | Monday        | Tuesday      | Wednesday     | Thursday      |
-|----------------------|---------------|--------------|---------------|---------------|
-| Dr. Ward             |               |              | 7:00-8:00 AM  |               |
-| Elizabeth Bell (UTA) |               | 3:00-4:00 PM |               | 3:00-4:00 PM  |
-| Luke Francisco (UTA) | 1:30-3:30 PM  |              |               |               |
-| Tyler Netherly (UTA) |               | 5:00-7:00 PM |               |               |
-| Tim Park       (UTA) | 5:00-6:00 PM  | 4:00-5:00 PM |               |               |
-| Sehwan Kim     (GTA) | 9:45-10:45 AM |              | 9:45-10:45 AM |               |
-| Yuki Ohnishi   (GTA) |               | 2:00-3:00 PM |               | 2:00-3:00 PM  |
-| Juan Shu       (GTA) |               |              |               | 8:30-10:30 AM |
-| Yumin Zhang    (GTA) |               |              | 3:00-5:00 PM  |               |
+Detailed office hours and contact information can be found [here](http://www.stat.purdue.edu/datamine/19000/)
