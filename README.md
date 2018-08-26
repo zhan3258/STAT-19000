@@ -41,7 +41,7 @@ You are now the proud owner of a GitHub account! The next step is to add your na
 
 - Press 'Update profile' to save your changes.
 
-**Once you are done creating your account, email your name and GitHub username to Dr. Ward (mdw@purdue.edu) so we can create your assignment repository!**
+**Once you are done creating your account, email your name, purdue ID, and GitHub username to Dr. Ward (mdw@purdue.edu) so we can create your assignment repository!**
 
 
 ## Homework guidelines
