@@ -80,6 +80,7 @@ Continue to the [next section](#how-to-submit-assignments) to learn how to submi
 ### For first-time submissions
 - Check your email inbox for a repository invite
     - If you can't find an invite, navigate to https://github.com/thedatamine/FIRSTNAME-LASTNAME
+    - If you still can't find an invite, the TAs may not have your repository set up yet, or may have forgotten to send you an invite. Feel free to send any one of them an email if the above does not work.
 - Accept the invite
 - Continue to the [next step](#for-return-customers)
 
