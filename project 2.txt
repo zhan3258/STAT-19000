@@ -1,0 +1,61 @@
+﻿1.  Use the airline data stored in this directory:
+
+
+/depot/statclass/data/dataexpo2009
+
+
+1a. What was the average arrival delay (in minutes) for flights in 2005?
+* 7.03274
+* Solution: I get into the file first, and then I put “ls” to list all the files in it. 
+* Then, I put “ head 2005.csv”
+* So I got the top ten data of the 2005 file.
+* And I find out the 15 line is the arrival delay
+* So I put cat 2005.csv | awk -F, ‘{ delay += $15 ; count +=1} END{print delay/count} ‘
+* Then I got the answer
+
+
+1b. What was the average departure delay (in minutes) for flights in 2005?
+* 8.51186
+* Solution: First, get into the file
+* Then put “head 2005.csv”
+* So I know that the line 16 is the departure delay
+* So I put cat 2005.csv | awk -F, ‘{delay += $16 ; count +=1 }END{print delay/count}’
+* Then I got the answer
+
+
+1cd. Now revise your solution to 1ab, to account for the full set of data, across all years.
+* So if I want to get all the data for the whole year, I can put head allyears.csv
+* Then for the arrive delay I need to put “cat allyears.csv | awk -F, '{ delay += $15 ; count +=1} END{print delay/count}' “
+* So the answer is 6.9023
+
+
+* So for the departure delay, we do the same thing. And we need to put cat allyears.csv | awk -F, '{ delay += $16 ; count +=1} END{print delay/count}' 
+* The answer is 8.01844
+
+
+2. Revise your solutions to 1abcd to only include flights that took place on the weekends.
+* So for the arrive delay only on weekends, we need to put cat allyears.csv | awk -F, '{if ($4>5){arrdelay += $15; count += 1}}END{print arrdelay/count}'
+* And for the arrive delay, the answer is 5.30331 
+* Then for the departure delay only on weekends, we need to put cat allyears.csv | awk -F, '{if ($4>5){depdelay += $16; count += 1}}END{print depdelay/count}'
+* So the answer for departure delay is 7.55609
+* And for the 2005.csv the arrive delay only on weekends, we need to do cat 2005.csv | awk -F, '{if ($4>5){arrdelay += $15; count += 1}}END{print arrdelay/count}'
+* And the answer is 4.84079
+* Then for the 2005 the departure delay only on weekends, we need to do cat 2005.csv | awk -F, '{if ($4>5){depdelay += $16; count += 1}}END{print depdelay/count}'
+* So the answer is 7.51424
+
+
+3.  Consider the June 2017 taxi cab data, which is located in this folder:
+
+
+/depot/statclass/data/taxi2018
+
+
+What is the average distance of a taxi cab ride in New York City in June 2017?
+* 2.97862
+* Solution: First, We should get into the file, so put cd /depot/statclass/data/taxi2018
+* Then we put ls after it
+* So we know the file name is yellow_tripdata_2017-06.csv
+* Then we want to find the line of the distance
+* So we put head yellow_tripdata_2017-06.csv
+* Then we know that the line 5 is the distance
+* Then we need to put cat yellow_tripdata_2017-06.csv | awk -F, ‘{distance += $5; count += 1}END{print distance/count}’
