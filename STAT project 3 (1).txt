@@ -1,0 +1,52 @@
+﻿Yuqi zhang
+Stat class
+Use R to revisit these questions.  They can each be accomplished with 1 line of code.
+
+
+1.  As in Project 1, question 2:  In the year 2005, did United or Delta have more flights?
+* DL have more flights. DL have 658302 flight and UA have 485918 flights.
+* For this question, my code is 
+* myDF <- read.csv("/depot/statclass/data/dataexpo2009/2005.csv")
+* head(myDF)
+* table(myDF$UniqueCarrier)[c("UA","DL")]
+
+
+2.  As in Project 2, question 2a:  Restricting attention to weekends (only), what was the average arrival delay (in minutes) for flights in 2005?
+* 4.939053
+* My code for this is 
+* mean(myDF$ArrDelay[myDF$DayOfWeek>5], na.rm=T)
+
+
+3.  As in Project 1, question 3:  In June 2017, what is the distribution of the number of passengers in the taxi cab rides?
+* Passenger number
+	times
+	9
+	20
+	7
+	26
+	8
+	30
+	0
+	548
+	4
+	187979
+	6
+	288220
+	3
+	406162
+	5
+	455753
+	2
+	1385066
+	1
+	6933189
+	* My code for this question is 
+* myDF <- read.csv("/depot/statclass/data/taxi2018/yellow_tripdata_2017-06.csv")
+* head(myDF)
+* sort(table(myDF$passenger_count))
+
+
+4.  As in Project 2, question 3:   What is the average distance of a taxi cab ride in New York City in June 2017?
+* 2.978617
+* My code for this question is
+* mean(myDF$trip_distance, na.rm = T)
