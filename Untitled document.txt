@@ -1,0 +1,18 @@
+﻿The forth project
+Coding:
+install.packages(“ggmap”)
+myDF <- read.csv(“/home/zhan3258/Downloads/airports.csv”)
+library(ggmap)
+Mypoints <- data.frame(lon=myDF$long[myDF$state==”IN”],lat[myDF$state==”IN”])
+Indiana_center = as.numeric(geocode(“Indiana”))
+IndianaMap = ggmap(get_googlemap(center=indiana_center,zoom=7))
+IndianaMap
+IndianaMap <- IndianaMap +geom_point(data=mypoints)
+IndianaMap
+
+
+Explain:
+First, we need to install the packages and then log into the files.
+Then we need to do the longitude and latitude at indiana
+In order to make the map work, we need to get the center of the indiana in google map
+Then the we can build the map and display it
